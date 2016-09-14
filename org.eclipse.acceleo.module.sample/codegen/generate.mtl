@@ -23,6 +23,6 @@
 [/template]
 
 
-[template public generarAtributo(p : Property)]
+[template public generarAtributo(pr : Property)]
    <li>[pr.name/] = [pr.type.name/] </li>
 [/template]
