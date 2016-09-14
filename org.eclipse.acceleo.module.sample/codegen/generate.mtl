@@ -17,12 +17,12 @@
 [template public generarNombre(c : Class)]
    <li>[c.name/]
       <ul>
-        [c.packagedElement->filter(Class).generarAtributo()/]
+        [c.attribute->filter(Property).generarAtributo()/]
       </ul>
    </li>
 [/template]
 
 
-[template public generarAtributo(a : Class)]
-   <li>[a.name/] = [a.type.name/] </li>
+[template public generarAtributo(p : Property)]
+   <li>[pr.name/] = [pr.type.name/] </li>
 [/template]
